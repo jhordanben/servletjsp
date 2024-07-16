@@ -1,0 +1,21 @@
+login: maroon
+senha: midnights
+
+CÓDIGO PARA DELETAR, INSERIR DADOS, E VER A TABELA
+
+
+
+
+DELETE from loginmodel where login = ''
+
+
+INSERT INTO loginmodel (login, senha)
+VALUES ('', '')
+
+
+
+SELECT * FROM loginmodel 
+
+
+
+<script type="text/javascript">

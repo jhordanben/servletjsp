@@ -1,0 +1,29 @@
+quando a gente quiser redirecionar do jsp para alguma pagina, a gente usa esse prefixo -> VVV
+
+<a href="<%= request.getContextPath() %>/ServletUsuarioController?acao=listarUser" class="waves-effect waves-dark">
+
+explicaçao do chatgpt
+
+<a href="...">: Este é um elemento HTML âncora (<a>), usado para criar um link para outra página. Quando clicado, ele redireciona o navegador para o 
+URL especificado no atributo href.
+
+<%= request.getContextPath() %>: Esta é uma expressão de scriptlet do Java Server Pages (JSP). Em JSP, <%= ... %> é usado para imprimir o 
+resultado de uma expressão Java no fluxo de saída HTML. request.getContextPath() é um método Java que retorna o caminho do contexto atual da 
+aplicação web. Esse caminho inclui o contexto da aplicação, como /minhaaplicacao.
+
+/ServletUsuarioController?acao=listarUser: Este é o URL para o qual o usuário será direcionado ao clicar no link. É composto por dois componentes principais:
+
+/ServletUsuarioController: Este é o caminho para o servlet que irá processar a requisição. Servlets são componentes Java que estendem as funcionalidades de um servidor web 
+para gerar dinamicamente conteúdo da web.
+?acao=listarUser: Este é um parâmetro de consulta (query parameter) 
+passado para o servlet. No contexto de muitos frameworks Java web, como o Spring MVC ou o Servlet API padrão, acao pode ser usado para determinar qual 
+ação deve ser executada pelo servlet. Neste caso, provavelmente está configurado para listar usuários.
+class="waves-effect waves-dark": Este é um atributo class usado para aplicar estilos CSS ao elemento <a>. 
+O valor waves-effect waves-dark provavelmente é utilizado por algum framework front-end (como Materialize CSS) para aplicar efeitos visuais específicos, 
+como animações ou alterações de cor, ao link.
+
+Portanto, o código HTML fornecido cria um link que, quando clicado, faz uma requisição para o servlet ServletUsuarioController, 
+passando o parâmetro acao=listarUser, e aplica estilos específicos através das classes CSS waves-effect e waves-dark.
+
+
+
